@@ -39,5 +39,46 @@
       "cost": "160000"
     },
     "shortdesc": "Newly Renovated Cozy Home"
+  },
+  { "address": {
+      "street": "72942 S Houston St",
+      "city": "Houston",
+      "state": "TX",
+      "zipcode": 87729
+    },
+    "amenities": {
+      "fireplace": false,
+      "gym": true,
+      "laundry": true,
+      "parking": true,
+      "pets": true,
+      "pool": true
+    },
+    "apartment": "Brookstone",
+    "available": {
+      "now": false,
+      "wait": "2 weeks"
+    },
+    "floorplan": {
+      "bed": 4,
+      "bath": 1,
+      "sqft": 1242
+    },
+    "id": 24036,
+    "images": [
+      "https://images1.apartments.com/i2/TyPX9gDx1TkoCOPjdchgO2hPkBnFwWmJE_ZmY5zg3OI/111/the-grand-on-broadway-tacoma-wa-interior-photo.jpg",
+      "https://images1.apartments.com/i2/0R0Ph-rRT8jl93nftnRbkd_bDdTp4Dt2Eb_1jxhn-aY/111/the-grand-on-broadway-tacoma-wa-interior-photo.jpg",
+      "https://images1.apartments.com/i2/kuy-NDTdT_Lc0uIT2OZdWOu6aA_PCFfKH-pLv7lWXCs/111/the-grand-on-broadway-tacoma-wa-interior-photo.jpg",
+      "https://images1.apartments.com/i2/gCI3VKcnXKaNKXUp9yI4ChS-iL_GabdQekl4lSeihTQ/111/the-grand-on-broadway-tacoma-wa-interior-photo.jpg",
+      "https://images1.apartments.com/i2/G4NBIVMEueJ2Be4FwX7G3tobu6uVHKPva-7Oedu8XwI/111/the-grand-on-broadway-tacoma-wa-interior-photo.jpg",
+      "https://images1.apartments.com/i2/UhD0BUOoWLQ_XxDWC0loNIj_BdZVGEvbJafvDDh1ZXA/111/the-grand-on-broadway-tacoma-wa-interior-photo.jpg",
+      "https://images1.apartments.com/i2/t-qu4eRzsA-pNS_gl65VzM95FRl5DU9P0gOgYVozeQM/111/the-grand-on-broadway-tacoma-wa-interior-photo.jpg",
+      "https://images1.apartments.com/i2/ULLcuz22Gp7QjgZyCz0LDDZo-CudTjhqsS34m8z90WQ/111/the-grand-on-broadway-tacoma-wa-interior-photo.jpg"
+    ],
+    "rent": {
+      "contract": "6-12",
+      "cost": "184000"
+    },
+    "shortdesc": "Spacious Appartment with Big Kitchen"
   }
 ]
