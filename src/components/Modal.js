@@ -1,8 +1,6 @@
 import React from 'react';
 import "../styles/modal.css";
 
-
-
 const Modal = ({show, details, close}) => {
   console.log(details);
 
@@ -11,8 +9,11 @@ const Modal = ({show, details, close}) => {
   }
 
   function handleClose(e){
-    if(e.currentTarget == e.target){
+    if(e.currentTarget === e.target){
       return close();
+    }
+    else {
+      console.log('HAHAHAHAHAAHAHAH');
     }
   }
 
@@ -20,9 +21,16 @@ const Modal = ({show, details, close}) => {
 
       <div className="modal-bg" onClick={handleClose}>
         <div className="modal-content">
-        {this.state.childresn}
-          <p>content</p>
-          <p onClick={handleClose}>CLOSE MEEEE</p>
+          <div className="content-left">
+            <h1>HAHAHAHAAHHA WORLD</h1>
+            <h1>HAHAHAHAAHHAasdgas fdssgasd</h1>
+
+          </div>
+          <div className="content-right">
+          
+          </div>
+
+
         </div>
       </div>
     )

@@ -4,14 +4,47 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: red;
+  background: rgba(0,0,0,0.8);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .modal-content {
-  background: blue;
-  width: 20vw;
-  height: 20vh;
+  background: green;
+  width: 865px;
+  height: 585px;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+}
+
+.content-left {
+  background: pink;
+  width: 50%;
+  /*height: 100%;*/
+  position: relative;
+  z-index: 100;
+}
+
+.content-left:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  z-index: -10;
+  opacity: .9;
+  -webkit-backface-visibility: hidden;
+  transform: skewX(5deg);
+  transform-origin: left top;
+}
+
+.content-right {
+  background: teal;
+  width: 50%;
+  height: 100%;
 }
