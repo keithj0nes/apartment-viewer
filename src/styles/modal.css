@@ -21,7 +21,7 @@
 
 .content-left {
   background: pink;
-  width: 50%;
+  width: 48%;
   /*height: 100%;*/
   position: relative;
   z-index: 100;
@@ -39,12 +39,12 @@
   z-index: -10;
   opacity: .9;
   -webkit-backface-visibility: hidden;
-  transform: skewX(5deg);
+  transform: skewX(10deg);
   transform-origin: left top;
 }
 
 .content-right {
   background: teal;
-  width: 50%;
+  width: 52%;
   height: 100%;
 }
