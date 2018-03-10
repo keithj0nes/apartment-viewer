@@ -18,50 +18,68 @@ const Modal = ({show, details, close}) => {
   }
 
   const a = details.amenities;
-    let amenities = {};
-    Object.keys(a).map((item, index)=>{
-      // console.log(a[item], 'itemsss');
-      if(Object.keys(amenities).length < 4){
-        if(a[item] === amenities[item]){
-          // console.log("getting herrrrree");
-        } else if(a[item] === true){
-          amenities[item] = a[item]
-        } else if(typeof a[item] === "string"){
-          amenities[item] = a[item]
-        }
+  let amenities = {};
+  Object.keys(a).forEach((item, index)=>{
+    // console.log(a[item], 'itemsss');
+    if(Object.keys(amenities).length < 4){
+      if(a[item] === amenities[item]){
+        // console.log("getting herrrrree");
+      } else if(a[item] === true){
+        amenities[item] = a[item]
+      } else if(typeof a[item] === "string"){
+        amenities[item] = a[item]
       }
-    })
+    }
+  })
 
-    return (
+  return (
 
-      <div className="modal-bg" onClick={handleClose}>
-        <div className="modal-content">
-          <div className="content-left">
-            <div className="logo">Logo</div>
-            <p className="shortdesc">{details.shortdesc}</p>
-            <p className="address">{details.address.street} {details.address.city}, {details.address.state}, {details.address.zipcode}</p>
-            <div className="amenities">
-              {Object.keys(amenities).map((a, k)=>{
-                return <div key={k}>{a} {amenities[a] === true ? "x" : amenities[a]}</div>
-              })}
-            </div>
+    <div className="modal-bg" onClick={handleClose}>
+      <div className="modal-content">
+        <div className="content-left">
+          <div className="logo">Logo</div>
+          <h2 className="shortdesc">{details.shortdesc}</h2>
+          <p className="address">i {details.address.street} {details.address.city}, {details.address.state}, {details.address.zipcode}</p>
+          <div className="amenities">
+            {Object.keys(amenities).map((a, k)=>{
+              return (
+                <div className="amenity-item" key={k}>
+
+                  <div>i</div>
+                  <div>{a}</div>
+                  <div className="amenity-check">{amenities[a] === true ? <div className="checkmark"></div> : amenities[a]}</div>
+                </div>
+                  )
+            })}
           </div>
-          <div className="content-right">
-            <img src={details.apartment} alt={details.apartment}/>
+        </div>
+        <div className="content-right">
+          <img src={details.images[0]} alt={details.apartment}/>
+
+          <div className="rent-availability-container">
             <div className="rent">
-              <p>Monthly Rent</p>
-              <p>{details.rent.cost}</p>
+              <p className="title-dark">Monthly Rent</p>
+              <p className="sub-dark">${(details.rent.cost / 100).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</p>
             </div>
             <div className="availability">
-              <p>Availability</p>
-              <p>{details.available.now === true ? "Right Now": details.available.wait}</p>
+              <p className="title-dark">Availability</p>
+              <p className="sub-dark">{details.available.now === true ? "Right Now": details.available.wait}</p>
             </div>
           </div>
 
-
+          <div className="buttons-container">
+            <div className="share-favorite">
+              <button className="secondary button-green">Share Property</button>
+              <button className="secondary button-red">Add Favorite</button>
+            </div>
+            <div>
+              <button className="primary">Arrange Viewing</button>
+            </div>
+          </div>
         </div>
       </div>
-    )
+    </div>
+  )
 }
 
 export default Modal;

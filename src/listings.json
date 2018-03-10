@@ -6,12 +6,12 @@
       "zipcode": 98765
     },
     "amenities": {
+      "fireplace": true,
+      "gym": false,
+      "laundry": "shared",
       "parking": true,
       "pets": true,
-      "laundry": "shared",
-      "pool": false,
-      "gym": false,
-      "fireplace": true
+      "pool": false
     },
     "apartment": "The Foundry",
     "available": {
