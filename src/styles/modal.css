@@ -17,6 +17,7 @@
   border-radius: 20px;
   display: flex;
   overflow: hidden;
+  position: relative;
 }
 
 .content-left {
@@ -97,8 +98,8 @@
 
 .checkmark {
   /*background: red;*/
-  border-left: 3px solid #f1f1f1;
-  border-bottom: 3px solid #f1f1f1;
+  border-left: 2px solid #f1f1f1;
+  border-bottom: 2px solid #f1f1f1;
   transform: rotate(-40deg);
   width: 30px;
   height: 15px;
@@ -188,4 +189,30 @@ button.button-green {
 button.button-red {
   border-color: #f5405e;
   color: #f5405e;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  /*background: red;*/
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.close div {
+  transform: rotate(45deg);
+  position: absolute;
+  height: 30px;
+  width: 1px;
+  background: #f0f0f0;
+  /*background: green;*/
+}
+
+.close div:first-child {
+  transform: rotate(-45deg);
 }

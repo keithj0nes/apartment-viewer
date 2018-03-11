@@ -2,7 +2,7 @@ import React from 'react';
 import "../styles/modal.css";
 
 const Modal = ({show, details, close}) => {
-  console.log(details);
+  // console.log(details);
 
   if(!show){
     return null;
@@ -12,18 +12,13 @@ const Modal = ({show, details, close}) => {
     if(e.currentTarget === e.target){
       return close();
     }
-    else {
-      console.log('HAHAHAHAHAAHAHAH');
-    }
   }
 
   const a = details.amenities;
   let amenities = {};
   Object.keys(a).forEach((item, index)=>{
-    // console.log(a[item], 'itemsss');
     if(Object.keys(amenities).length < 4){
       if(a[item] === amenities[item]){
-        // console.log("getting herrrrree");
       } else if(a[item] === true){
         amenities[item] = a[item]
       } else if(typeof a[item] === "string"){
@@ -36,6 +31,10 @@ const Modal = ({show, details, close}) => {
 
     <div className="modal-bg" onClick={handleClose}>
       <div className="modal-content">
+        <div className="close" onClick={handleClose}>
+          <div></div>
+          <div></div>
+        </div>
         <div className="content-left">
           <div className="logo">Logo</div>
           <h2 className="shortdesc">{details.shortdesc}</h2>
