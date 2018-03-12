@@ -23,12 +23,34 @@ class AptListings extends React.Component {
   }
 
   render(){
+
     return (
       <div className="apt-listings">
+        <h1>Listings</h1>
         <ul>
           {
             this.state.listings.map((listing, key) => {
-              return <li key={key} onClick={()=>{this.handleClick(listing)}}>{listing.address.street} {listing.address.city}, {listing.address.state}, {listing.address.zipcode}</li>
+              return (
+                <li key={key} onClick={()=>{this.handleClick(listing)}}>
+                  <div className="img">
+                   <img src={listing.images[0]} alt={listing.apartment} />
+
+                  </div>
+
+                  <div className="info">
+
+                    <h2>{listing.apartment}</h2>
+                    <div>
+                      {listing.address.street}
+                    </div>
+                    <div>
+                      {listing.address.city}, {listing.address.state}, {listing.address.zipcode}
+                    </div>
+
+                  </div>
+
+                </li>
+              )
             })
           }
         </ul>

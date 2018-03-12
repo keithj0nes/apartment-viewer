@@ -26,3 +26,12 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }*/
+
+
+.App {
+  background: #254b71;
+}
+
+li {
+  list-style-type: none;
+}

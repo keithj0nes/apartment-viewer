@@ -80,5 +80,88 @@
       "cost": "184000"
     },
     "shortdesc": "Spacious Appartment with Big Kitchen"
+  },
+
+  { "address": {
+      "street": "534 N Scran Ave",
+      "city": "Seattle",
+      "state": "WA",
+      "zipcode": 34429
+    },
+    "amenities": {
+      "fireplace": true,
+      "gym": true,
+      "laundry": "shared",
+      "parking": true,
+      "pets": false,
+      "pool": true
+    },
+    "apartment": "La Connor",
+    "available": {
+      "now": true,
+      "wait": null
+    },
+    "floorplan": {
+      "bed": 2,
+      "bath": 1,
+      "sqft": 449
+    },
+    "id": 24037,
+    "images": [
+      "https://images1.apartments.com/i2/6maoRqNmocXbvwakxbMaemE7T3w_fkBrHx2SAMIfYV4/111/ava-capitol-hill-seattle-wa-one-bedroom-kitchen.jpg",
+      "https://images1.apartments.com/i2/dVV-LSRTDaD6Km4X_vuJAdrfYXy3FT1IloxeiYrpZHM/111/ava-capitol-hill-seattle-wa-one-bedroom-dining-area-and-chalkboard-w.jpg",
+      "https://images1.apartments.com/i2/Vy02q_eEHS02hQfv1qLZHIcQxjje4XADdBmHHAhqrKE/111/ava-capitol-hill-seattle-wa-one-bedroom-living-room.jpg",
+      "https://images1.apartments.com/i2/OfLwhsFaPYxd3owHOylbAYhWkn99qx9QuR91DAYmpVg/111/ava-capitol-hill-seattle-wa-one-bedroom-living-room.jpg",
+      "https://images1.apartments.com/i2/LPZ6oR-ziHAn9j9bEX0nlS1zC6MxXe4mRIIJXtlBl2Y/111/ava-capitol-hill-seattle-wa-one-bedroom-master-bath.jpg",
+      "https://images1.apartments.com/i2/BXRBwhyV0mBOY0Z061-xXPu_NCWKqUJhlWPoqfC1FfI/111/ava-capitol-hill-seattle-wa-one-bedroom-master-bath.jpg",
+      "https://images1.apartments.com/i2/qzEEHC5sxSjD1H_rC92XzixWtGZglPScsvetrlWcu1M/111/ava-capitol-hill-seattle-wa-bedroom.jpg",
+      "https://images1.apartments.com/i2/WvUpf6sab7XyLvSwyfWqL8wDLTDCv1iKyIJAX4ROec4/111/ava-capitol-hill-seattle-wa-one-bedroom-master-bedroom.jpg"
+    ],
+    "rent": {
+      "contract": "6",
+      "cost": "110000"
+    },
+    "shortdesc": "Warm Fireplace in Friendly Den"
+  },
+  { "address": {
+      "street": "99022 SW Pawndy At",
+      "city": "St Louis",
+      "state": "MO",
+      "zipcode": 19249
+    },
+    "amenities": {
+      "fireplace": false,
+      "gym": false,
+      "laundry": true,
+      "parking": true,
+      "pets": true,
+      "pool": true
+    },
+    "apartment": "The Estates",
+    "available": {
+      "now": true,
+      "wait": null
+    },
+    "floorplan": {
+      "bed": 8,
+      "bath": 11,
+      "sqft": 4439
+    },
+    "id": 24038,
+    "images": [
+      "https://images1.apartments.com/i2/WvUpf6sab7XyLvSwyfWqL8wDLTDCv1iKyIJAX4ROec4/111/ava-capitol-hill-seattle-wa-one-bedroom-master-bedroom.jpg",
+      "https://images1.apartments.com/i2/6maoRqNmocXbvwakxbMaemE7T3w_fkBrHx2SAMIfYV4/111/ava-capitol-hill-seattle-wa-one-bedroom-kitchen.jpg",
+      "https://images1.apartments.com/i2/dVV-LSRTDaD6Km4X_vuJAdrfYXy3FT1IloxeiYrpZHM/111/ava-capitol-hill-seattle-wa-one-bedroom-dining-area-and-chalkboard-w.jpg",
+      "https://images1.apartments.com/i2/Vy02q_eEHS02hQfv1qLZHIcQxjje4XADdBmHHAhqrKE/111/ava-capitol-hill-seattle-wa-one-bedroom-living-room.jpg",
+      "https://images1.apartments.com/i2/OfLwhsFaPYxd3owHOylbAYhWkn99qx9QuR91DAYmpVg/111/ava-capitol-hill-seattle-wa-one-bedroom-living-room.jpg",
+      "https://images1.apartments.com/i2/LPZ6oR-ziHAn9j9bEX0nlS1zC6MxXe4mRIIJXtlBl2Y/111/ava-capitol-hill-seattle-wa-one-bedroom-master-bath.jpg",
+      "https://images1.apartments.com/i2/BXRBwhyV0mBOY0Z061-xXPu_NCWKqUJhlWPoqfC1FfI/111/ava-capitol-hill-seattle-wa-one-bedroom-master-bath.jpg",
+      "https://images1.apartments.com/i2/qzEEHC5sxSjD1H_rC92XzixWtGZglPScsvetrlWcu1M/111/ava-capitol-hill-seattle-wa-bedroom.jpg"
+    ],
+    "rent": {
+      "contract": "6",
+      "cost": "202000"
+    },
+    "shortdesc": "Lofty 8 Bedrooms for Big Family"
   }
 ]

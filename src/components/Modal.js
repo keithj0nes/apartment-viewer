@@ -2,7 +2,7 @@ import React from 'react';
 import "../styles/modal.css";
 
 const Modal = ({show, details, close}) => {
-  // console.log(details);
+  console.log(details);
 
   if(!show){
     return null;
@@ -38,7 +38,7 @@ const Modal = ({show, details, close}) => {
         <div className="content-left">
           <div className="logo">Logo</div>
           <h2 className="shortdesc">{details.shortdesc}</h2>
-          <p className="address">i {details.address.street} {details.address.city}, {details.address.state}, {details.address.zipcode}</p>
+          <p className="address">i {details.apartment} | {details.address.street} {details.address.city}, {details.address.state}, {details.address.zipcode}</p>
           <div className="amenities">
             {Object.keys(amenities).map((a, k)=>{
               return (
